@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sevillana&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2ca6df54a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+
+        <img class="logo" src="Imagenes\Logo.jpg" >    
+        <h1>El Faro</h1> 
+        <div id="FyH" class="FyH"></div>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#deporte">Deporte</a></li>
+                <li><a href="#negocios">Negocios</a></li>
+            </ul>
+        </nav>
+        
+            
+        </div>
+        <section id="inicio" class="inicio">
+            
+            <div class="barra">
+                <h2 class="principal">Noticias</h2>
+                <div id="actual" class="noticia">
+
+                </div>
+                <div class="controles">
+                    <button id="prev" class="control"><</button>
+                    <button id="next" class="control">></button>
+                </div>
+            </div>
+            <button id="mostrarForm" class="Agregar">Agregar Noticia</button>
+            <div class="form">
+                <h3>Agregar Nueva Noticias</h3>
+                <form id="form-agregar">
+                    <label for="titulo">Titulo:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                    <br>
+                    <label for="categoria">Categoría:</label>
+                    <input type="text" name="categoria" id="categoria" required>
+                    <br>
+                    <label for="descripcion">Descripción:</label>
+                    <textarea name="descripcion" id="descripcion" required></textarea>
+                    <br>
+                    <button type="submit">Agregar Noticia</button>
+                </form>
+            </div>
+            <div class="contador">
+                <p>Total de articulos: <span id="total">0</span></p>
+            </div>
+                <div class="video">
+                    
+                    <video controls autoplay>
+                        <source src="Video.mp4" type="video/mp4">
+                    </video>
+                </div>                                   
+        </section>
+        
+        <section id="deporte" class="deporte">
+            <h2 class="TituloD">Noticias de Deportes</h2>
+            <Div class="ImgDeporte">
+                <img src="Imagenes\Deportes.jpg" width="600px" height="400px">   
+            </Div>       
+            <table class="ContenedorD">                
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Categoria</th>
+                        <th>Resumen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="ItemD">
+                        <td>Massú y González celebran dos décadas de su hazaña olímpica con nueva victoria ante mismos rivales</td>
+                        <td>Tenis</td>
+                        <td>Los tenistas chilenos Nicolás Massú y Fernando González reeditaron este martes sus triunfos de hace 20 años ante los norteamericanos Mardy Fish y Taylor Dent, en partidos de exhibición para conmemorar sus medallas olímpicas en Atenas 2004.
+
+                            Los partidos, disputados en el Movistar Arena de Santiago, recordaron las dos medallas de oro conseguidas por Massú en sencillos y en dobles junto a González, quien también obtuvo el bronce en esos Juegos Olímpicos.
+                            
+                            Massú se impuso a Fish esta vez por 4-6, 6-2, con un tie break 10-5, mientras que su triunfo en Atenas fue en cinco sets de 6-3, 3-6, 2-6, 6-3 y 6-4.
+                            
+                            González le ganó Dent con un doble 6-3 este martes, pero hace 20 años los hizo en tres sets por 6-4, 2-6, 16-14.</td>
+                    </tr>
+                    <tr class="ItemD">
+                        <td>La Roja pierde un titular para Eliminatorias: grave lesión</td>
+                        <td>Futbol</td>
+                        <td>La Roja sufrió una importante baja para la doble fecha eliminatoria ante Argentina y Bolivia, a inicios de septiembre. Igor Lichnovsky no podrá ser convocado debido a una lesión: según anunció el Club América, el zaguero será “sometido a una intervención quirúrgica de plástica de ligamento cruzado anterior de la rodilla derecha”.
+
+                            La propia institución informó que aún no está claro el tiempo de recuperación, ya que éste corresponderá “a su evolución”. Sin embargo, el medio mexicano Récord señaló que estaría de baja un mes y medio, aproximadamente.
+                            
+                            El anuncio es sorpresivo, porque el zaguero jugó el sábado pasado en el duelo de las Águilas y Colorado Rapids, por la Leagues Cup, donde finalizó el encuentro e, incluso, pateó un penal en la tanda decisiva. Ahora, Lichnovsky deberá ceder su lugar en la titularidad de la Roja.</td>
+                    </tr>
+                    <tr class="ItemD">
+                        <td>Floyd Mayweather vs. John Gotti III: Fecha, transmisión y cartelera del evento de boxeo</td>
+                        <td>Boxeo</td>
+                        <td>"Money" regresa a la acción en CDMX enfrentándose a John Gotti III en un evento de exhibición.
+                            Este sábado se viene una increíble velada de boxeo desde Ciudad de México, ya que uno de los campeones más importantes del último tiempo volverá a subirse al cuadrilátero, se trata de Floyd Mayweather Jr, excampeón mundial de boxeo, quien enfrentará nuevamente a John Gotti III, reconocido por ser nieto del famoso mafioso estadounidense del mismo nombre.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="negocios" class="negocios">
+            <h2 class="TituloN">Noticias de Negocios</h2>
+            <div class="ImgNegocios">
+                <img src="Imagenes/Negocios.jpg" width="600px" height="400px">
+            </div>
+            <table class="ContenedorN">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Categoria</th>
+                        <th>Resumen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="ItemN">
+                        <td>Empresa griega inauguró nueva planta fotovoltaica en Chile</td>
+                        <td>Negocios</td>
+                        <td>La empresa griega Metlen Energy & Metals inauguró su segundo parque fotovoltaico en la Región de Coquimbo, con una potencia de 90 megavatios de energía limpia, que evitará unas 80 mil toneladas anuales de emisiones de dióxido de carbono.
+
+                            Según detalló este martes el diario griego Kathimerini, la nueva planta, "Doña Antonia", con una inversión de 65 millones de dólares, cuenta con 151 mil 920 paneles localizados en la ciudad de Ovalle.
+                            
+                            "Generará energía equivalente al consumo anual de más de 85.000 hogares", destacó la compañía griega en un comunicado.</td>
+
+                    </tr>
+                    <tr class="ItemN">
+                        <td>SQM sigue sufriendo los menores precios del litio: anotó pérdidas por más de US$600 millones</td>
+                        <td>Negocios</td>
+                        <td>Los menores precios del litio siguen pasando la cuenta a SQM, quien reportó pérdidas en los primeros seis meses del 2024.
+
+                            Al 30 de junio, la minera no metálica tuvo ingresos por US$2.378 millones versus US$4.315,6 millones del mismo período del año anterior. Las pérdidas alcanzaron los US$655,9 millones.
+                            
+                            Sin embargo, al segundo trimestre, SQM si pudo conseguir una ganancia de US$213,6 millones, lejos de los US$580,2 millones obtenidos en el segundo trimestre del 2023.</td>
+                    </tr>
+                    <tr class="ItemN">
+                        <td>Wall Street cerró en verde con los inversores esperanzados por un recorte de tipos en septiembre</td>
+                        <td>Negocios</td>
+                        <td>Wall Street cerró este miércoles en verde y su principal indicador, el Dow Jones de Industriales, subió un 0,14% tras conocerse datos que refuerzan la perspectiva de un recorte de los tipos de interés en Estados Unidos en septiembre.
+
+                            Al toque de la campana, el Dow Jones se situó en 40.890 puntos; el S&P 500 avanzó un 0,42%, hasta 5.620 unidades, y el Nasdaq sumó un 0,57%, hasta 17.918 enteros.
+                            
+                            Este miércoles se publicaron las actas de la reunión de julio del Comité Federal de Mercado Abierto (FOMC) de la Reserva Federal (Fed), que sugieren que el cambio de ciclo en política monetaria comenzará en septiembre con una primera bajada de los tipos.
+                            
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer class="footer">
+            <div class="RS">
+                <a href=""class="fa-brands fa-facebook"></a>
+                <a href=""class="fa-brands fa-instagram"></a>
+                <a href=""class="fa-brands fa-youtube"></a>
+            </div>
+            <p>Pagina creada por Gerald Acevedo León.</p>
+            <div class="contacto">
+                    <h3>Contacto</h3>
+                    <label for="nombre" id="Nombre">Nombre:</label>
+                    <input type="text" id="Nombre" name="Nombre" required>
+                    <br>
+                    <label for="mensaje">Mensaje::</label>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+            </div>
+        </footer>
+    </main>
+    <script>
+        let noticias = [
+            {
+                titulo: "Detienen a pareja que circulaba con auto robado y medio kilo de drogas en Collipulli",
+                categoria: "Policial",
+                descripcion: "En un control vehicular realizado en la Ruta 5 Sur, Carabineros del Retén Esperanza detuvo a una pareja que circulaba en un vehículo robado, portando cerca de medio kilo de diversas drogas. En concreto, de acuerdo a información policial, la captura de los sujetos se registró en la comuna de Collipulli, en la región de La Araucanía. En esa línea, se informó que el automóvil en que se moviliza daba la pareja detenida, un Mazda 626, había sido sustraído en San Pedro de La Paz, región del Biob, íoel pasado 18 de agosto."
+            },
+            {
+                titulo: "Qué significa la Alerta Sanitaria en Chile por la Viruela del Mono",
+                categoria: "Salud",
+                descripcion: "El Ministerio de Salud (Minsal) de Chile anunció la emisión de una Alerta Sanitaria en todo el país, de manera preventiva por el aumento de casos del virus de la Viruela del Mono alrededor del mundo, pero ¿qué significa en concreto y qué pasa con el proceso de vacunación? En concreto, la Mpox clado 1B, la actual cepa de la Viruela del Mono, sería menos contagiosa, pero más mortal, con una tasa de decesos entre el 3% y 4% en comparación al 0,1% de clado 2, la anterior cepa conocida. Para hacerse una idea, el covid-19 tuvo una tasa de fallecimiento de 1,2%."
+            },
+            {
+                titulo: "¿Sube o baja el precio de la bencina? Esto dijo ENAP hoy",
+                categoria: "Dinero",
+                descripcion: "De acuerdo a la información publicada por ENAP el día de hoy, el único combustible en variar su valor esta semana fue la parafina-kerosene, bajando en $10,2 pesos por litro ($/Lt). ¿Qué pasó con los otros combustibles? En tanto, el valor de la bencina de 93 y 97 octanos, así como el petróleo-diésel y el GLP vehicular, no variará esta semana porque estos combustibles cambian su precio cada tres semanas, gracias al MEPCO, y, por tanto, aún no se cumple el tiempo establecido."
+            }
+        ];
+    
+        const noticiaActual = document.getElementById('actual');
+        const btnPrev = document.getElementById('prev');
+        const btnNext = document.getElementById('next');
+        const formAgregarNoticia = document.getElementById('form-agregar');
+        const tituloInput = document.getElementById('titulo');
+        const categoriaInput = document.getElementById('categoria');
+        const descripcionInput = document.getElementById('descripcion');
+        const form = document.querySelector('.form');
+        const totalArticulosE = document.getElementById('total');
+    
+        function actualizarContador() {
+            totalArticulosE.textContent = noticias.length;
+        }
+    
+        let indiceActual = 0;
+    
+        function mostrarNoticia(index) {
+            const noticia = noticias[index];
+            noticiaActual.innerHTML = `
+                <h3 class="titulo-noticia">${noticia.titulo}</h3>
+                <p><strong>Categoría:</strong> ${noticia.categoria}</p>
+                <p class="descripcion"><strong>Descripción:</strong> ${noticia.descripcion}</p>
+            `;
+        }
+    
+        const btnMostrarForm = document.getElementById('mostrarForm');
+    
+        btnMostrarForm.addEventListener('click', () => {
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        });
+    
+        mostrarNoticia(indiceActual);
+        let intervalo = setInterval(() => {
+            indiceActual = (indiceActual + 1) % noticias.length;
+            mostrarNoticia(indiceActual);
+        }, 10000);
+    
+        btnPrev.addEventListener('click', () => {
+            clearInterval(intervalo);
+            indiceActual = (indiceActual - 1 + noticias.length) % noticias.length;
+            mostrarNoticia(indiceActual);
+            intervalo = setInterval(() => {
+                indiceActual = (indiceActual + 1) % noticias.length;
+                mostrarNoticia(indiceActual);
+            }, 10000);
+        });
+    
+        btnNext.addEventListener('click', () => {
+            clearInterval(intervalo);
+            indiceActual = (indiceActual + 1) % noticias.length;
+            mostrarNoticia(indiceActual);
+            intervalo = setInterval(() => {
+                indiceActual = (indiceActual + 1) % noticias.length;
+                mostrarNoticia(indiceActual);
+            }, 10000);
+        });
+    
+        formAgregarNoticia.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const nuevoTitulo = tituloInput.value;
+            const nuevaCategoria = categoriaInput.value;
+            const nuevaDescripcion = descripcionInput.value;
+    
+            const nuevaNoticia = {
+                titulo: nuevoTitulo,
+                categoria: nuevaCategoria,
+                descripcion: nuevaDescripcion
+            };
+    
+            noticias.push(nuevaNoticia);
+            tituloInput.value = '';
+            categoriaInput.value = '';
+            descripcionInput.value = '';
+    
+            mostrarNoticia(noticias.length - 1);
+            indiceActual = noticias.length - 1;
+            clearInterval(intervalo);
+            intervalo = setInterval(() => {
+                indiceActual = (indiceActual + 1) % noticias.length;
+                mostrarNoticia(indiceActual);
+            }, 5000);
+    
+            form.style.display = 'none';
+            actualizarContador();
+        });
+    
+        function fechaHora() {
+            const ahora = new Date();
+    
+            const fecha = ahora.toLocaleDateString();
+            const hora = ahora.toLocaleTimeString();
+    
+            document.getElementById('FyH').textContent = `${fecha} ${hora}`;
+        }
+    
+        fechaHora();
+    
+        setInterval(fechaHora, 1000);
+        actualizarContador();
+    </script>
+    
+    
+</body>
+</html>
